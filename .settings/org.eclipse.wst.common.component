@@ -2,6 +2,6 @@
     <wb-module deploy-name="PCWorld">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <property name="context-root" value="PCWorld"/>
-        <property name="java-output-path" value="/PCWorld/build/classes"/>
+        <property name="java-output-path" value="/PCWorld/bin"/>
     </wb-module>
 </project-modules>
