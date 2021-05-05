@@ -8,8 +8,14 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_271">
 		<attributes>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-11.0.10">
+		<attributes>
+			<attribute name="module" value="true"/>
+>>>>>>> branch 'master' of https://github.com/GennaroCecco/ProgettoTSW2021.git
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
