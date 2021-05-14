@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CarrelloControl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       ProdottoDAO model = new ProdottoDAO();
+    ProdottoDAO model = new ProdottoDAO();
        OrdiniDAO modelOrdini = new OrdiniDAO();
        ComponiDAO modelComponi = new ComponiDAO();
     
