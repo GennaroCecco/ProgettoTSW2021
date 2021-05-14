@@ -26,9 +26,53 @@
 		
 	</servlet>
 	
+	<servlet>
+		<servlet-name>LoginControl</servlet-name>
+		<servlet-class>it.unisa.control.LoginControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegistrazioneControl</servlet-name>
+		<servlet-class>it.unisa.control.RegistrazioneControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InserimentoFinalControl</servlet-name>
+		<servlet-class>it.unisa.control.InserimentoFinalControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LogoutControl</servlet-name>
+		<servlet-class>it.unisa.control.LogoutControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CartaControl</servlet-name>
+		<servlet-class>it.unisa.control.CartaControl</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DettagliOrdineControl</servlet-name>
+		<servlet-class>it.unisa.control.DettagliOrdineControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>IndirizzoControl</servlet-name>
+		<servlet-class>it.unisa.control.IndirizzoControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>OrdiniControl</servlet-name>
+		<servlet-class>it.unisa.control.OrdiniControl</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>CarrelloControl</servlet-name>
 		<url-pattern>/carrello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>IndirizzoControl</servlet-name>
+		<url-pattern>/indirizzo</url-pattern>
 	</servlet-mapping>
 	
 	<servlet-mapping>
@@ -39,6 +83,40 @@
 	<servlet-mapping>
 		<servlet-name>DettagliControl</servlet-name>
 		<url-pattern>/dettagli</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginControl</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DettagliOrdineControl</servlet-name>
+		<url-pattern>/dettagliOrdine</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegistrazioneControl</servlet-name>
+		<url-pattern>/registrazione</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CartaControl</servlet-name>
+		<url-pattern>/carta</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InserimentoFinalControl</servlet-name>
+		<url-pattern>/inserimento</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutControl</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrdiniControl</servlet-name>
+		<url-pattern>/ordini</url-pattern>
 	</servlet-mapping>
 	
 	</web-app>

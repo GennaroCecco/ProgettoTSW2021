@@ -1,22 +1,29 @@
 package it.unisa.control;
 import it.unisa.model.*;
+import it.unisa.model.bean.OrdineBean;
+import it.unisa.model.bean.UserBean;
+import it.unisa.model.dao.*;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.sql.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import it.unisa.model.*;
+
 
 
 public class CarrelloControl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        ProdottoDAO model = new ProdottoDAO();
+       OrdiniDAO modelOrdini = new OrdiniDAO();
+       ComponiDAO modelComponi = new ComponiDAO();
     
     public CarrelloControl() {
         super();
@@ -26,6 +33,8 @@ public class CarrelloControl extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Carrello carrello = (Carrello)request.getSession().getAttribute("carrello");
+		UserBean user = (UserBean)request.getSession().getAttribute("Utente");
+		OrdineBean ordine = new OrdineBean();
 		int id=0;
 		boolean state=false;
 		if(carrello == null) {
@@ -49,11 +58,30 @@ public class CarrelloControl extends HttpServlet {
 				int num = Integer.parseInt(request.getParameter("num"));
 				carrello.setNumeroProdotto(id, num);
 			}
-			else if(op.equalsIgnoreCase("Checkout")) {
+			else if(op.equalsIgnoreCase("acquista")) {
+				try {
+					if(carrello != null && user.isValid()) {
+						ordine.setStato("Confermato");
+					}
+					else {
+						ordine.setStato("Negato");
+					}
+					Date data = new Date(System.currentTimeMillis());
+					ordine.setData(data);
+					ordine.setIdUtente(user.getIdUtente());
+					modelOrdini.doSave(ordine);
+					
+					modelComponi.doSave(modelOrdini.doRetrieveByKey(user.getIdUtente()), carrello);
+					
+				} catch (SQLException e) {
+					System.out.println("Errore Carrello control:"+ e.getMessage());
+					
+				}
 				carrello.deleteAll();
-				response.sendRedirect("Checkout.html");
+				response.sendRedirect("./catalogo");
 				state=true;
 			}
+			
 		}
 		
 		request.getSession().setAttribute("carrello", carrello);

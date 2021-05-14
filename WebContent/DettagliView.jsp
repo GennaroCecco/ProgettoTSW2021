@@ -1,17 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
     <% 
     	ProdottoBean prodotto = (ProdottoBean) request.getAttribute("prodotto");
     
     %>
 <!DOCTYPE html>
 <html>
-<%@ page contentType="text/html; charset=UTF-8" import="it.unisa.model.*"%>
+<%@ page contentType="text/html; charset=UTF-8" import="it.unisa.model.bean.*"%>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>PCWorld</title>
 </head>
 <body>
+<%@include file="jsp/header.jsp" %>
+<br>
 <h2>Dettagli</h2>
 <a href="./catalogo">Home</a>
 
@@ -21,7 +23,7 @@
 		<th>IdProdotto</th>
 		<th>Nome</th>
 		<th>Descrizione</th>
-		<th>Quantità Disponibile</th>
+		<th>QuantitÃ  Disponibile</th>
 		<th>Prezzo</th>
 		<th>Operazione</th>
 		</tr>
@@ -38,6 +40,7 @@
 	<% 
 		}
 	%>
-	
+	<br>
+	<%@include file="jsp/footer.jsp" %>
 </body>
 </html>

@@ -1,4 +1,6 @@
 package it.unisa.model;
+import it.unisa.model.dao.*;
+
 import java.sql.SQLException;
 import java.util.*;
 public class Carrello {
@@ -26,7 +28,7 @@ public class Carrello {
 			ProdottoCarrello newItem = new ProdottoCarrello(model.doRetrieveByKey(idProdotto));
 			carrello.add(newItem);
 		}catch(SQLException e){
-			System.out.println("Errore :"+e.getMessage());
+			System.out.println("Errore Carrello :"+e.getMessage());
 		}
 	}
 	
@@ -49,7 +51,7 @@ public class Carrello {
 			ProdottoCarrello newItem = new ProdottoCarrello(model.doRetrieveByKey(id));
 			carrello.add(newItem);
 		}catch(SQLException e) {
-			System.out.println("Errore: "+e.getMessage());
+			System.out.println("Errore Carrello: "+e.getMessage());
 		}
 		
 	}

@@ -10,7 +10,7 @@ if(prodotti == null){
 %>
 <!DOCTYPE html>
 <html>
-<%@ page contentType="text/html; charset=UTF-8" import="java.util.*,it.unisa.model.*"%>
+<%@ page contentType="text/html; charset=UTF-8" import="java.util.*,it.unisa.model.bean.*"%>
 
 
 <head>
@@ -19,13 +19,17 @@ if(prodotti == null){
 </head>
 
 <body>
+	<%@include file="jsp/header.jsp" %>
+	<br>
 	<h2>Prodotti</h2>
-	<a href="./carrello">Carrello</a>
+	
 	
 	<table border="1">
 	<tr>
 		<th>Codice</th>
+		<th>Tipologia</th>
 		<th>Nome</th>
+		<th>Prezzo</th>
 		<th>Operazione</th>
 	</tr>
 	
@@ -38,7 +42,9 @@ if(prodotti == null){
 	%>
 	<tr>
 		<td><%=bean.getIdProdotto()%></td>
+		<td><%=bean.getTipologia()%></td>
 		<td><%=bean.getNome()%></td>
+		<td><%=bean.getPrezzo()%></td>
 		
 		<td>
 			<a href="./dettagli?id=<%=bean.getIdProdotto() %>">Dettagli</a><br>
@@ -59,7 +65,8 @@ if(prodotti == null){
 			}
 	%>
 	</table>
-	
+	<br>
+	<%@ include file="jsp/footer.jsp" %>
 </body>
 
 </html>

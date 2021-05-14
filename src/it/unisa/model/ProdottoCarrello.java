@@ -1,4 +1,5 @@
 package it.unisa.model;
+import it.unisa.model.bean.*;
 
 public class ProdottoCarrello {
 	private ProdottoBean prodotto;
