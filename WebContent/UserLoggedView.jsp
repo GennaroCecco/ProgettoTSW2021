@@ -9,14 +9,16 @@
 <html>
 <%@ page contentType="text/html; charset=UTF-8" import="java.util.*,it.unisa.model.bean.*,it.unisa.model.*"%>
 <head>
+<link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
-<title>PCWorld:Area Utente</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<title>PCWorld: Ciao <%=user.getNome() %></title>
 </head>
 <body>
-<%@include file="jsp/header.jsp" %>
+<%@include file="topdown/header.jsp" %>
 <br>
-	
-	<table border="1">
+<div class="content">
+	<table class="table" border="1">
 		<tr>
 			<th>Nome</th>
 			<th>Cognome</th>
@@ -32,12 +34,15 @@
 			<%} %>
 		</tr>		
 	</table>
-	<a href="./logout">Esci </a><br>
-	<a href="./ordini">Vai ai tuoi Ordini</a><br>
-	<%if(user.getNumeroCarta()==null){ %>
-	<a href="CompletaConfigView.jsp">Completa Registrazione</a><br>
-	<%} %>
+	<br>
+		<a href="./logout">Esci </a><br>
+		<a href="./ordini">Vai ai tuoi Ordini</a><br>
+		<a href="./catalogo">Vai al Catalogo</a><br>
+		<%if(user.getNumeroCarta()==null){ %>
+			<a href="CompletaConfigView.jsp">Completa Registrazione</a><br>
+		<%} %>
+</div>
 <br>
-<%@include file="jsp/footer.jsp" %>
+<%@include file="topdown/footer.jsp" %>
 </body>
 </html>

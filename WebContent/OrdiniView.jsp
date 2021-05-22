@@ -9,13 +9,16 @@
 <%@ page contentType="text/html; charset=UTF-8" import="java.util.*,it.unisa.model.bean.*,it.unisa.model.*,it.unisa.model.dao.*"%>
 
 <head>
+<link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
-<title>PCWorld:Ordini</title>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<title>PCWorld: Ordini</title>
 </head>
 <body>
-<%@include file="jsp/header.jsp" %>
+<%@include file="topdown/header.jsp" %>
 <br>
-	<table border="1">
+<div class="content">
+	<table class="table" border="1">
 		<tr>
 			<th>Numero Ordine</th>
 			<th>Stato</th>
@@ -39,7 +42,7 @@
 			<td><%=ordine.getIdOrdine() %> </td>
 			<td><%=ordine.getStato() %> </td>
 			<td><%=ordine.getData().toString() %> </td>
-			<td><%=totale %></td>
+			<td>€<%=totale %></td>
 			<td><a href="./dettagliOrdine?id=<%=ordine.getIdOrdine() %>"> Dettagli Ordine</a> </td>
 		</tr>
 		<% 
@@ -53,7 +56,8 @@
 		
 
 	</table>
+	</div>
 <br>
-<%@include file="jsp/footer.jsp" %>
+<%@include file="topdown/footer.jsp" %>
 </body>
 </html>

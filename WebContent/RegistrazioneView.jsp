@@ -3,12 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="img/favicon.png" />
 <title>PCWorld:Registrazione</title>
 </head>
 <body>
-<%@include file="jsp/header.jsp" %>
+<%@include file="topdown/header.jsp" %>
 <br>
+<div class="content">
 	<form action="./registrazione" method="post">
 		<fieldset>
 			<legend>Dati Utente</legend>
@@ -27,7 +30,8 @@
 		
 		<input type="submit" value="Registrati">
 	</form>
+</div>
 <br>
-<%@include file="jsp/footer.jsp" %>
+<%@include file="topdown/footer.jsp" %>
 </body>
 </html>
