@@ -1,30 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%
-	Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti");
-if(prodotti == null){
-	
-	response.sendRedirect("./catalogo");
-	return;
-}
-%>
+	<%
+		Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti");
+		if(prodotti == null){
+			response.sendRedirect("./catalogo");
+			return;
+		}
+	%>
 <!DOCTYPE html>
 <html>
 <%@ page contentType="text/html; charset=UTF-8" import="java.util.*,it.unisa.model.bean.*"%>
 
 
 <head>
+<link rel="stylesheet" href="css/style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>PCWorld</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<title>PCWorld: Home</title>
 </head>
 
 <body>
-	<%@include file="jsp/header.jsp" %>
-	<br>
+	<%@include file="topdown/header.jsp" %>
+	
+	<div class="content">
 	<h2>Prodotti</h2>
 	
 	
-	<table border="1">
+	<table class="table" border="1">
+	
 	<tr>
 		<th>Codice</th>
 		<th>Tipologia</th>
@@ -44,13 +47,19 @@ if(prodotti == null){
 		<td><%=bean.getIdProdotto()%></td>
 		<td><%=bean.getTipologia()%></td>
 		<td><%=bean.getNome()%></td>
-		<td><%=bean.getPrezzo()%></td>
+		<td>€<%=bean.getPrezzo()%></td>
 		
 		<td>
-			<a href="./dettagli?id=<%=bean.getIdProdotto() %>">Dettagli</a><br>
-				<a href="./catalogo?op=aggC&id=<%=bean.getIdProdotto()%>">Aggiungi al carrello</a>
-				</td>
 		
+		<%if(bean.getQuantita()!=0){ %>
+		
+			<div class="iconInfo"><a href="./dettagli?id=<%=bean.getIdProdotto() %>"><img src="img/icona-info.png"></a></div>
+			<div class="iconCart"><a href="./catalogo?op=aggC&id=<%=bean.getIdProdotto()%>"><img src="img/icon-cart.png" ></a></div>
+				
+		<%}else{ %>
+			<div class="iconInfo"><a href="./dettagli?id=<%=bean.getIdProdotto() %>"><img src="img/icona-info.png" ></a></div>
+			<%} %>
+			</td>
 	</tr>
 	<% 
 			}
@@ -65,8 +74,10 @@ if(prodotti == null){
 			}
 	%>
 	</table>
+	</div>
+
 	<br>
-	<%@ include file="jsp/footer.jsp" %>
+	<%@ include file="topdown/footer.jsp" %>
 </body>
 
 </html>

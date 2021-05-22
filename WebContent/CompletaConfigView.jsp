@@ -11,12 +11,15 @@
 <html>
 <%@ page contentType="text/html; charset=UTF-8" import="java.util.*,it.unisa.model.bean.*,it.unisa.model.*"%>
 <head>
+<link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
 <title>PCWorld:Completamento</title>
 </head>
 <body>
-<%@include file="jsp/header.jsp" %>
+<%@include file="topdown/header.jsp" %>
 <br>
+<div class="content">
+
 	<form action="./inserimento" method="post">
 	<fieldset>
     		<legend>Dati carta</legend>
@@ -55,7 +58,8 @@
 	</fieldset>
 	<input type="submit" value="Completa Registrazione">
 	</form>
+</div>
 <br>
-<%@include file="jsp/footer.jsp" %>
+<%@include file="topdown/footer.jsp" %>
 </body>
 </html>

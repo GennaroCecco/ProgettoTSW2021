@@ -50,6 +50,7 @@
 		<servlet-name>CartaControl</servlet-name>
 		<servlet-class>it.unisa.control.CartaControl</servlet-class>
 	</servlet>
+	
 	<servlet>
 		<servlet-name>DettagliOrdineControl</servlet-name>
 		<servlet-class>it.unisa.control.DettagliOrdineControl</servlet-class>
@@ -63,6 +64,41 @@
 	<servlet>
 		<servlet-name>OrdiniControl</servlet-name>
 		<servlet-class>it.unisa.control.OrdiniControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RicercaControl</servlet-name>
+		<servlet-class>it.unisa.control.RicercaControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AdminControl</servlet-name>
+		<servlet-class>it.unisa.control.AdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InsertAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.InsertAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ModificaAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.ModificaAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>OrdiniAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.OrdiniAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChooseTypeControl</servlet-name>
+		<servlet-class>it.unisa.control.ChooseTypeControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LogoutAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.LogoutAdminControl</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
@@ -114,9 +150,45 @@
 		<servlet-name>LogoutControl</servlet-name>
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>OrdiniControl</servlet-name>
 		<url-pattern>/ordini</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RicercaControl</servlet-name>
+		<url-pattern>/ricerca</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InsertAdminControl</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ModificaAdminControl</servlet-name>
+		<url-pattern>/modifica</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>OrdiniAdminControl</servlet-name>
+		<url-pattern>/ordiniAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChooseTypeControl</servlet-name>
+		<url-pattern>/chooseType</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutAdminControl</servlet-name>
+		<url-pattern>/logoutAdmin</url-pattern>
 	</servlet-mapping>
 	
 	</web-app>
