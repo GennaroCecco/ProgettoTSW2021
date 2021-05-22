@@ -9,6 +9,7 @@ Cognome char(15) not null,
 Email varchar(30) not null,
 Password varchar(30) not null,
 Numero_Carta varchar(16) references Metodo_Pagamento(Numero_Carta),
+Ruolo varchar(20) not null,
 primary key(ID)
 );
 
@@ -19,7 +20,7 @@ Tipologia varchar(30) not null,
 Nome varchar(60) not null,
 Descrizione varchar(150) not null,
 Prezzo double not null,
-Quantità_Disponibile int not null,
+Quantita_Disponibile int not null,
 IVA double not null,
 primary key (ID)
 );
@@ -41,7 +42,7 @@ ID_Articolo int not null,
 ID_Ordine int not null,
 IVA double not null,
 Prezzo_Articolo double not null,
-Quantità_Selezionata int not null,
+Quantita_Selezionata int not null,
 primary key(ID_Articolo,ID_Ordine),
 foreign key(ID_Articolo) references Articolo(ID)
 on update cascade
@@ -55,7 +56,7 @@ use tsw;
 
 create table Indirizzo(
 ID int not null,
-Città char(25)  not null,
+Citta char(25)  not null,
 Via char(40) not null,
 Numero_Civico int not null,
 Piano int,
@@ -92,4 +93,3 @@ foreign key(ID_Articolo) references Articolo(ID)
 on update cascade
 on delete cascade
 )
-

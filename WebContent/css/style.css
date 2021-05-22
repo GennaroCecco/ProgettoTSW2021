@@ -1,0 +1,350 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+@font-face {
+   font-family: 'Quicksand', sans-serif;
+   src: url('Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+	height: 100%;
+}
+
+a {
+	color: #292929;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*Sezione sito*/
+
+body {
+	margin: 0;
+	min-height: 100%; 
+    position: relative;
+    background-color: white;
+	min-height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+	padding-left: 12px;
+	padding-top: 12px;
+	float: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 140px;
+}
+
+.table {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+    padding-bottom: 75px;
+}
+
+.header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 75px;
+	width: 100%;
+	background-color: #292929;
+}
+
+.utente {
+	float: right;
+	width: 75px;
+}
+
+.carrello {
+	float: right;
+	width: 75px;
+}
+
+.ciaoutente {
+	color: #f4f4f8;
+	float: right;
+	padding-top: 25px;
+}
+
+.ciaoutente > a {
+    text-decoration: none;
+    color: #f4f4f8;
+    font-size: 17px;
+}
+
+.catalogov {
+	display: none;
+}
+
+.iconInfo{
+	float:right;
+	padding-left: 13px;
+	width: 35px;
+	height: 35px;
+}
+
+.iconCart{
+	float:left;
+	width: 45px;
+	height: 45px;
+}
+
+.iconRemove{
+	float:left;
+	width: 45px;
+	height: 45px;
+	
+}
+
+.iconModify{
+	padding-left:20px;
+	width: 45px;
+	height: 45px;
+}
+
+.footer {
+    position: absolute;
+    left: 0; bottom: 0;
+    height: 75px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+    width: 100%;
+	background-color: #292929;
+	overflow: auto;
+}
+
+.footertext {
+	padding-left: 5px;
+	color: #f4f4f8;
+	float: left;
+	width: 50%;
+}
+
+.socialdistance {
+	display: block;
+}
+
+.social {
+	float: right;
+	padding-top: 15px;
+	padding-right: 10px;
+	width: 50px;
+	height: 55px;
+}
+
+.navmenu{
+	padding-top: 13px;
+	height: 40px;
+	width: 100%;
+	background-color: #e9eceb;
+	margin-top: 12px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+.navmenu > a{
+	text-decoration: none;
+	padding-left: 5px;
+	color: #292929;
+	font-size: 18px;
+}
+
+.navmenu > a:hover{
+	color: black;
+	font-weight: bold;
+}
+
+/*Sezione Admin*/
+
+.headeradmin {
+	position: sticky;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
+	width: 100%;
+	background-color: #292929;
+}
+
+.logoadmin {
+	padding-left: 45%;
+	padding-top: 12px;
+	float: left;
+	text-align: center;
+	width: 140px;
+	height: 70px;
+}
+
+.imgadmin {
+	padding-right: 12px;
+	padding-top: 12px;
+	float: right;
+	width: 65px;
+}
+
+@media screen and (max-width: 1000px) {
+	.header {
+		position: static;
+		background-color: #292929;
+		height: 100px;
+		min-height: 100%;
+	}
+	
+	.logo {
+		width: 200px;
+	}
+	
+	.utente, .carrello {
+		width: 82px;
+		padding-top: 10px;
+	}
+	
+	.ciaoutente {
+		font-size: 22px;
+		padding-top: 35px;
+	}
+	
+	.ciaoutente > a {
+		font-size: 22px;
+	}
+	
+	.content{
+		padding-bottom: 140px;
+	}
+	
+	.socialdistance {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+	.footer {
+		height: 140px;
+	}
+	
+	.footertext {
+		float: none;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.social {
+		float: none;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 50px;
+		padding-top: 5px;
+		padding-right: 10px;
+		height: 55px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	.header {
+		position: static;
+		background-color: #292929;
+		height: 100%;
+		max-height: 300px;
+	}
+		
+	.content {
+		height: 100%;
+		padding-bottom: 250px;
+	}
+	
+	.logo {
+		padding-left: 0;
+		float: none;
+		text-align: center;
+		width: 220px;
+		height: 100%;
+	}
+	
+	.utente {
+		display: none;
+	}
+	
+	.ciaoutente {
+		display: none;
+	}
+	
+	.carrello {
+		display: none;
+	}
+	
+	.catalogov {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: #f4f4f8;
+	}
+	
+	.catalogov > a {
+		text-decoration: none;
+	    color: #f4f4f8;
+	    font-size: 32px;
+	}
+	
+	.catalogov > a:hover {
+		color: #5c5c5d;
+	}
+	
+	.footer {
+		height: 250px;
+	}
+	
+	.footertext {
+		float: none;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.social {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50px;
+		padding-top: 5px;
+		padding-right: 10px;
+		height: 55px;
+	}
+
+	.headeradmin {
+		position: static;
+	}
+
+	.logoadmin {
+		padding-left: 12px;
+		float: left;
+	}
+
+	.imgadmin {
+		float: right;
+	}
+}

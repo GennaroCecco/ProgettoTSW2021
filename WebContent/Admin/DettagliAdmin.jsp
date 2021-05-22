@@ -12,13 +12,12 @@
 <link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="img/favicon.png" />
-<title>PCWorld:Dettagli Ordine</title>
+<title>PCWorld: Admin-Dettagli Ordine</title>
 </head>
 <body>
-<%@include file="topdown/header.jsp" %>
+<%@include file="../topdown/headerAdmin.jsp" %>
 <br>
-<div class="content">
-	<table class="table" border="1">
+	<table border="1">
         <tr>
             <th>Nome</th>
             <th>Descrizione</th>
@@ -39,7 +38,7 @@
             <td><%=prod.getNome() %> </td>
             <td><%=prod.getDescrizione() %> </td>
             <td><%=quantita %> </td>
-            <td>€<%=tot %> </td>
+             <td><%=tot %> </td>
         </tr>
         <% 
                 }
@@ -47,8 +46,6 @@
         %>
 
     </table>
-	</div>
-<br>
-<%@include file="topdown/footer.jsp" %>
+	
 </body>
 </html>
