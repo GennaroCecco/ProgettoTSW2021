@@ -3,7 +3,6 @@ import it.unisa.model.*;
 import it.unisa.model.bean.OrdineBean;
 import it.unisa.model.bean.UserBean;
 import it.unisa.model.dao.*;
-
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -15,6 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 
 
@@ -35,7 +35,6 @@ public class CarrelloControl extends HttpServlet {
 		Carrello carrello = (Carrello)request.getSession().getAttribute("carrello");
 		UserBean user = (UserBean)request.getSession().getAttribute("Utente");
 		OrdineBean ordine = new OrdineBean();
-		int id=0;
 		boolean state=false;
 		if(carrello == null) {
 			carrello = new Carrello();
@@ -44,7 +43,7 @@ public class CarrelloControl extends HttpServlet {
 		String op = request.getParameter("op");
 		
 		if(op != null) {
-			
+			int id;
 			if(op.equalsIgnoreCase("aggC")) {
 				 id = Integer.parseInt(request.getParameter("id"));
 				carrello.addItem(id);
@@ -62,16 +61,23 @@ public class CarrelloControl extends HttpServlet {
 				try {
 					if(carrello != null && user.isValid()) {
 						ordine.setStato("Confermato");
+						Date data = new Date(System.currentTimeMillis());
+						ordine.setData(data);
+						ordine.setIdUtente(user.getIdUtente());
+						modelOrdini.doSave(ordine);
+						modelComponi.doSave(modelOrdini.doRetrieveByKey(user.getIdUtente()), carrello);
+						List<ProdottoCarrello> list= new ArrayList<ProdottoCarrello>();
+						list = carrello.getAllItem();
+						for(ProdottoCarrello prdC:list) {
+							int idP= prdC.getProdottoID();
+							int quant = prdC.getNumProdotto();
+							model.refreshQuantitaTot(idP, quant);
+						}
 					}
 					else {
-						ordine.setStato("Negato");
+						throw new SQLException();
 					}
-					Date data = new Date(System.currentTimeMillis());
-					ordine.setData(data);
-					ordine.setIdUtente(user.getIdUtente());
-					modelOrdini.doSave(ordine);
 					
-					modelComponi.doSave(modelOrdini.doRetrieveByKey(user.getIdUtente()), carrello);
 					
 				} catch (SQLException e) {
 					System.out.println("Errore Carrello control:"+ e.getMessage());

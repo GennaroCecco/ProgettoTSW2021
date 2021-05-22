@@ -2,7 +2,8 @@ package it.unisa.control;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import it.unisa.model.dao.*;
+import it.unisa.model.dao.ProdottoDAO;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

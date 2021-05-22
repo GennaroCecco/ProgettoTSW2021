@@ -11,6 +11,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
+
 public class ProdottoDAO implements ProdottoModel<ProdottoBean>{
 	private static final String TABLE_NAME = "articolo";
 	private static DataSource ds;
@@ -32,7 +33,7 @@ public class ProdottoDAO implements ProdottoModel<ProdottoBean>{
 	public void doSave(ProdottoBean prodotto) throws SQLException {
 		Connection con = null;
 		PreparedStatement prS = null;
-		String insertSQL = "Insert into "+ TABLE_NAME +" (Tipologia,Nome,Descrizione,Prezzo,Quantità_Disponibile,IVA)"
+		String insertSQL = "Insert into "+ TABLE_NAME +" (Tipologia,Nome,Descrizione,Prezzo,Quantita_Disponibile,IVA)"
 				+ " values(?,?,?,?,?,?)";
 		
 		try {
@@ -40,12 +41,13 @@ public class ProdottoDAO implements ProdottoModel<ProdottoBean>{
 			prS = con.prepareStatement(insertSQL);
 			
 			prS.setString(1, prodotto.getTipologia());
-			prS.setString(2,prodotto.getDescrizione());
-			prS.setInt(3, prodotto.getQuantita());
+			prS.setString(2,prodotto.getNome());
+			prS.setString(3, prodotto.getDescrizione());
 			prS.setDouble(4, prodotto.getPrezzo());
 			prS.setInt(5, prodotto.getQuantita());
 			prS.setDouble(6, prodotto.getIva());
 			
+			prS.executeUpdate();
 			
 		}finally {
 			try {
@@ -107,7 +109,7 @@ public class ProdottoDAO implements ProdottoModel<ProdottoBean>{
 	                bean.setNome(result.getString("Nome"));
 	                bean.setDescrizione(result.getString("Descrizione"));
 	                bean.setPrezzo(result.getDouble("Prezzo"));
-	                bean.setQuantita(result.getInt("Quantità_Disponibile"));
+	                bean.setQuantita(result.getInt("Quantita_Disponibile"));
 	                bean.setIva(result.getDouble("IVA"));
 	                
 	            }
@@ -147,7 +149,7 @@ public class ProdottoDAO implements ProdottoModel<ProdottoBean>{
 		bean.setNome(result.getString("Nome"));
 		bean.setDescrizione(result.getString("Descrizione"));
 		bean.setPrezzo(result.getDouble("Prezzo"));
-		bean.setQuantita(result.getInt("Quantità_Disponibile"));
+		bean.setQuantita(result.getInt("Quantita_Disponibile"));
 		bean.setIva(result.getDouble("IVA"));
 		prodotti.add(bean);
 		}
@@ -162,4 +164,242 @@ public class ProdottoDAO implements ProdottoModel<ProdottoBean>{
 			}
 		return prodotti;
 		}
+	public void refreshQuantitaTot(int id, int quanti) throws SQLException{
+		Connection con = null;
+		PreparedStatement prS = null;
+		
+		String update = "UPDATE articolo SET Quantita_Disponibile = Quantita_Disponibile- ? WHERE ID = ? ";
+		try {
+			con = ds.getConnection();
+			prS = con.prepareStatement(update);
+			prS.setInt(1, quanti);
+			prS.setInt(2, id);
+			
+			prS.executeUpdate();
+		}finally {
+			try {
+				if(prS!=null)
+					prS.close();
+			}finally {
+				if(con!=null)
+					con.close();
+			}
+		}
+	}
+	public void refreshQuantita(int id, int quanti) throws SQLException{
+		Connection con = null;
+		PreparedStatement prS = null;
+		
+		String update = "UPDATE articolo SET Quantita_Disponibile = ? WHERE ID = ? ";
+		try {
+			con = ds.getConnection();
+			prS = con.prepareStatement(update);
+			prS.setInt(1, quanti);
+			prS.setInt(2, id);
+			
+			prS.executeUpdate();
+		}finally {
+			try {
+				if(prS!=null)
+					prS.close();
+			}finally {
+				if(con!=null)
+					con.close();
+			}
+		}
+	}
+	public ArrayList<ProdottoBean> searchForName(String nome) throws SQLException {
+		Connection con = null;
+		PreparedStatement prS = null;
+		ResultSet result = null;
+		ArrayList<ProdottoBean> prod = new ArrayList<ProdottoBean>();
+		String search = "Select * from articolo where Tipologia = ?";
+		
+		try {
+			con = ds.getConnection();
+			prS = con.prepareStatement(search);
+			prS.setString(1, nome);
+			
+			result = prS.executeQuery();
+			
+			while(result.next()) {
+				ProdottoBean bean = new ProdottoBean();
+				bean.setIdProdotto(result.getInt("ID"));
+				bean.setNome(result.getString("Nome"));
+				bean.setTipologia(result.getString("Tipologia"));
+				bean.setDescrizione(result.getString("Descrizione"));
+				bean.setPrezzo(result.getDouble("Prezzo"));
+				bean.setQuantita(result.getInt("Quantita_Disponibile"));
+				bean.setIva(result.getDouble("IVA"));
+				prod.add(bean);
+			}
+			
+			
+		}finally {
+			try {
+				if(prS!=null)
+					prS.close();
+			}finally {
+				if(con!=null)
+					con.close();
+			}
+		}
+		return prod;
+	}
+	
+	
+	public void refreshDescrizione(int id, String dz) throws SQLException{
+        Connection con = null;
+        PreparedStatement prS = null;
+
+        String update = "UPDATE articolo SET Descrizione =  ? WHERE ID = ? ";
+        try {
+            con = ds.getConnection();
+            prS = con.prepareStatement(update);
+            prS.setString(1, dz);
+            prS.setInt(2, id);
+
+            prS.executeUpdate();
+        }finally {
+            try {
+                if(prS!=null)
+                    prS.close();
+            }finally {
+                if(con!=null)
+                    con.close();
+            }
+        }
+    }
+public void refreshNome(int id, String nm) throws SQLException{
+        Connection con = null;
+        PreparedStatement prS = null;
+
+        String update = "UPDATE articolo SET Nome = ? WHERE ID = ? ";
+        try {
+            con = ds.getConnection();
+            prS = con.prepareStatement(update);
+            prS.setString(1, nm);
+            prS.setInt(2, id);
+
+            prS.executeUpdate();
+        }finally {
+            try {
+                if(prS!=null)
+                    prS.close();
+            }finally {
+                if(con!=null)
+                    con.close();
+            }
+        }
+    }
+public void refreshPrezzo(int id, double pr) throws SQLException{
+        Connection con = null;
+        PreparedStatement prS = null;
+
+        String update = "UPDATE articolo SET Prezzo = ? WHERE ID = ? ";
+        try {
+            con = ds.getConnection();
+            prS = con.prepareStatement(update);
+            prS.setDouble(1, pr);
+            prS.setInt(2, id);
+
+            prS.executeUpdate();
+        }finally {
+            try {
+                if(prS!=null)
+                    prS.close();
+            }finally {
+                if(con!=null)
+                    con.close();
+            }
+        }
+    }
+
+public void refreshTipologia(int id,String tipologia) throws SQLException {
+    Connection con = null;
+    PreparedStatement prS = null;
+
+    String updateSQL = "Update articolo set Tipologia = ? Where ID = ?";
+
+    try {
+        con = ds.getConnection();
+        prS = con.prepareStatement(updateSQL);
+
+        prS.setString(1, tipologia);
+        prS.setInt(2, id);
+
+        prS.executeUpdate();
+    }finally {
+        try {
+            if(prS != null)
+                prS.close();
+
+        }finally {
+            if(con != null)
+                con.close();
+
+        }
+    }
+
+}
+
+public void refreshIVA(int id,double IVA) throws SQLException {
+    Connection con = null;
+    PreparedStatement prS = null;
+
+    String updateSQL = "Update articolo set IVA = ? Where ID = ?";
+
+    try {
+        con = ds.getConnection();
+        prS = con.prepareStatement(updateSQL);
+
+        prS.setDouble(1, IVA);
+        prS.setInt(2, id);
+
+        prS.executeUpdate();
+    }finally {
+        try {
+            if(prS != null)
+                prS.close();
+
+        }finally {
+            if(con != null)
+                con.close();
+
+        }
+    }
+}
+	public ArrayList<ProdottoBean> retrieveByType(String tipo) throws SQLException{
+		Connection con = null;
+		PreparedStatement prS = null;
+		ResultSet result;
+		ArrayList<ProdottoBean>prodotti = new ArrayList<ProdottoBean>();
+		String selectSQL = "select * from "+ TABLE_NAME+" where tipologia = ?";
+		try {
+			con = ds.getConnection();
+			prS = con.prepareStatement(selectSQL);
+			prS.setString(1, tipo);
+			result = prS.executeQuery();
+			while(result.next()) {
+				ProdottoBean bean = new ProdottoBean();
+				bean.setIdProdotto(result.getInt("ID"));
+				bean.setTipologia(result.getString("Tipologia"));
+				bean.setNome(result.getString("Nome"));
+				bean.setDescrizione(result.getString("Descrizione"));
+				bean.setPrezzo(result.getDouble("Prezzo"));
+				bean.setQuantita(result.getInt("Quantita_Disponibile"));
+				bean.setIva(result.getDouble("IVA"));
+				prodotti.add(bean);
+			}
+		}finally {
+			try {
+				if(prS != null)
+					prS.close();
+			}finally {
+				if(con != null)
+					con.close();
+			}
+		}
+		return prodotti;
+	}
 }

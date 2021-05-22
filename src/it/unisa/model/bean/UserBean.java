@@ -7,9 +7,10 @@ public class UserBean {
 	private String nome;
 	private String cognome;
 	private String numeroCarta;
+	private String ruolo;
 	public boolean validita = false;
 	public UserBean() {
-		// TODO Auto-generated constructor stub
+		this.ruolo = "utente";
 	}
 	
 	public int getIdUtente() {
@@ -65,5 +66,12 @@ public class UserBean {
 		validita = newValidita;
 		return validita;
 	}
+	public String getRuolo() {
+		return ruolo;
+	}
+	public void setRuolo(String ruolo) {
+		this.ruolo = ruolo;
+	}
+	
 	
 }
