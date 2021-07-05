@@ -1,0 +1,149 @@
+use tsw;
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'MSI', 'MSI Optix MAG241CV LCD Monitor Gaming 24 Curvo', '200', '7', '0.22', './Prodotti/MSI Optix MAG241CV LCD Monitor Gaming 24 Curvo, Pannelo VA, 144 Hz, 1ms.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'Samsung', 'Samsung Monitor Odyssey 32 Pollici C32G53T - Monitor Gaming Curvo', '239.99', '11', '0.22', './Prodotti/Samsung Monitor Odyssey 32 Pollici C32G53T - Monitor Gaming Curvo, 144Hz, 1000R, 1 ms, AMD Freesync Premium, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'Lenovo', 'Lenovo C24-25 Monitor - Display 23.8 FullHD (1920x1080)', '129', '4', '0.22', './Prodotti/Lenovo C24-25 Monitor - Display 23.8 FullHD (1920x1080, VA, Bordi Ultrasottili, FreeSync, 4ms, 75Hz, Cavo VGA, Input HDMI + VGA) Black.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'Samsung', 'Samsung Monitor LC27G73TQSUXEN - Monitor Gaming Curvo G73 da 27 Pollici', '569.00', '3', '0.22', './Prodotti/Samsung Monitor LC27G73TQSUXEN - Monitor Gaming Curvo G73 da 27 Pollici, 240 Hz, 1000R, 1 ms, G-Sync, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'MSI', 'MSI Optix G242 Monitor Gaming 24, Display (FHD) 1920x1080, Frequenza 144Hz', '249.00', '7', '0.22', './Prodotti/MSI Optix G242 Monitor Gaming 24, Display (FHD) 1920x1080, Frequenza 144Hz, Tempo di risposta 1ms, Pannello IPS, G-SYNC Compatibile, MSI Gaming OSD, VESA 100x100mm.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'Xiaomi', 'Xiaomi Mi 23.8 Desktop Monitor 1C, Monitor da 23.8', '135.70', '6', '0.22', './Prodotti/Xiaomi Mi 23.8 Desktop Monitor 1C, Monitor da 23.8, Full HD Display 1080P, Bassa emissione di luce blu, Design elegante, Connessione semplice e veloce, Nero, Versione Italiana.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'Acer', 'Acer ED270RPbiipx Monitor Gaming Curvo FreeSync, 27, Display VA Full HD', '213.28', '11', '0.22', './Prodotti/Acer ED270RPbiipx Monitor Gaming Curvo FreeSync, 27, Display VA Full HD, 165 Hz, 5 ms, HDMI 1.4, DP, Schermo PC con Contrasto 100M, Lum 250 cd m2, ZeroFrame, Audio Out, Cavi HDMI, DP Inclusi.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'BenQ', 'BenQ GW2280 Monitor LED Eye-Care da 22 Pollici, Full HD, 1920 x 1080, HDMI', '121.99', '17', '0.22', './Prodotti/BenQ GW2280 Monitor LED Eye-Care da 22 Pollici, Full HD, 1920 x 1080, HDMI.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'AOC', 'AOC Monitor Italia 27B2H LED da 27 IPS, FHD, 1920x1080, 75Kz, VGA, HDMI, Nero', '151.65', '9', '0.22', './Prodotti/AOC Monitor Italia 27B2H LED da 27 IPS, FHD, 1920x1080, 75Kz, VGA, HDMI, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'HP', 'HP PC V27i Monitor, Schermo 27 Pollici IPS Full HD, Risoluzione 1920 x 1080', '149.99', '4', '0.22', './Prodotti/HP - PC V27i Monitor, Schermo 27 Pollici IPS Full HD, Risoluzione 1920 x 1080, Micro-Edge, Antiriflesso, Tempo di Risposta 5 ms, Comandi sullo Schermo, HDMI e VGA, Reclinabile, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Monitor', 'LG', 'LG 24ML600S Monitor 24 FULL HD LED IPS, 1920x1080, 1ms MBR, AMD FreeSync 75Hz, Audio Stereo 10W', '149.99', '23', '0.22', './Prodotti/LG 24ML600S Monitor 24 FULL HD LED IPS, 1920x1080, 1ms MBR, AMD FreeSync 75Hz, Audio Stereo 10W, HDMI (HDCP 1.4), VGA, Uscita Audio, Flicker Safe, Bianco.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Webcam', 'Logitech', 'Logitech Brio Stream Webcam per Streaming Ultra HD 4K Veloce a 1080p 60fps', '171.50', '5', '0.22','./Prodotti/Logitech Brio Stream Webcam per Streaming Ultra HD 4K Veloce a 1080p 60fps, Campo Visivo Regolabile, PC Xbox Mac, ‎Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Webcam', 'Trust', 'Trust GXT 1160 Vero Webcam Full HD 1080P con Microfono Integrato, Nero', '44.99', '9', '0.22','./Prodotti/Trust GXT 1160 Vero Webcam Full HD 1080P con Microfono Integrato, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Webcam', 'Trust', 'Trust Tyro Webcam PC con Microfono Full HD 1080p', '49.99', '2', '0.22','./Prodotti/Trust Tyro Webcam PC con Microfono Full HD 1080p (Auto-Focus, USB, Treppiede Incluso, Hangouts, Skype, Teams, Zoom, PC Laptop), Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Logitech', 'Logitech G 915 Lightspeed Wireless RGB Tastiera Gaming Meccanica', '39.99', '9', '0.22','./Prodotti/Logitech G 915 Lightspeed Wireless RGB Tastiera Gaming Meccanica, Tactile Switches, US Intl. Layout, NeroCarbon.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Logitech', 'Logitech K120 Tastiera Cablata per Windows, USB Plug-And-Play', '34.99', '12', '0.22','./Prodotti/Logitech K120 Tastiera Cablata ‎per Windows, USB Plug-And-Play, Tasti Silenziosi Ribassati, ‎Layout Standard, Anti Schizzi, Barra Spaziatrice Curva Pc-Laptop, Layout Italiano Qwerty, ‎Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Logitech', 'Logitech K280E Pro Tastiera, Layout Italiano Qwerty, Nero', '31.99', '4', '0.22','./Prodotti/Logitech K280E Pro Tastiera, Layout Italiano Qwerty, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Logitech', 'Logitech K400 Plus Tastiera Wireless per TV, PC, Home Theater', '29.99', '2', '0.22','./Prodotti/Logitech K400 Plus Tastiera Wireless per TV, PC, Home Theater‎, Tasti ‎Multimediali Personalizzabili, Windows, Android, Laptop-Tablet, Layout Italiano QWERTY, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Razer', 'Razer BlackWidow V3 Green Switch Tastiera da Gaming con Illuminazione Chroma RGB', '69.99', '20', '0.22','./Prodotti/Razer BlackWidow V3 Green Switch Tastiera da Gaming con Illuminazione Chroma RGB, Rotella Digitale Multi-Funzione e Tasti Multimediali, Poggia Polsi Ergonomico, Layout Italiano, Nero.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Rii', 'Rii Gaming RK100+ (Layout Italiano) - Tastiera Italiana da Gioco retroilluminata a LED (Arcobaleno)', '19.99', '8', '0.22','./Prodotti/Rii Gaming RK100+ (Layout Italiano) - Tastiera Italiana da Gioco retroilluminata a LED (Arcobaleno) con Tasti multimediali, paragonabile a Una Tastiera Meccanica.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Unbranded', 'Tastiera Meccanica Gaming RGB 82 Tasti,100% Anti-ghosting Switches Blu', '24.99', '14', '0.22','./Prodotti/Tastiera meccanica programmabile per PC e gaming  Retroilluminazione LED RGB, layout IT (QWERTY).jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Unbranded', 'Tastiera meccanica programmabile per PC e gaming  Retroilluminazione LED RGB', '26.99', '13', '0.22','./Prodotti/Tastiera meccanica programmabile per PC e gaming  Retroilluminazione LED RGB, layout IT (QWERTY).jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Trust', 'Trust Classicline Tastiera Water-resistant, Layout Italiano (QWERTY, vecchio modello)', '39.99', '7', '0.22','./Prodotti/Trust classic.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Tastiera', 'Trust', 'Trust Gaming GXT 835 Azor Tastiera Illuminata Gaming', '51.99', '10', '0.22','./Prodotti/Trust Gaming GXT 835 Azor Tastiera Illuminata Gaming.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Computer', 'Lenovo', 'i3 7000 - 4G RAM ddr4- 500 HDD SEAGATE', '499.99', '4', '0.22','./Prodotti/i3 7000 - 4G RAM ddr4- 500 HDD SEAGATE - 2 USB 2.0 - 1 USB 3.0 - Lettore DVD.png');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Computer', 'Lenovo', 'i3 7000 - 8G RAM ddr4 - 250 SSD KINGSTON', '599.99', '5', '0.22','./Prodotti/i3 7000 - 8G RAM ddr4 - 250 SSD KINGSTON - 2 USB 2.0 - 1 USB 3.0 - Lettore DVD.png');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Computer', 'Lenovo', 'i3 7000 - 8G RAM ddr4- 1 TB HDD SEAGATE', '549.99', '5', '0.22','./Prodotti/i3 7000 - 8G RAM ddr4- 1 TB HDD SEAGATE - 2 USB 2.0 - 1 USB 3.0 - Lettore DVD.png');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Computer', 'Unbranded', 'i5 7000 - 16 GB RAM DDR4 - 500 SSD SAMSUNG', '749.99', '10', '0.22','./Prodotti/i5 7000 - 16 GB RAM DDR4 - 500 SSD SAMSUNG - 2 USB 2.0 - 1 USB 3.0.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Computer', 'Acer', 'i5 10000 - 32 GB RAM DDR4 - 500 SSD NVME SAMSUNG 980 - 1 TB HDD', '1199.99', '5', '0.22','./Prodotti/i5 10000 - 32 GB RAM DDR4 - 500 SSD NVME SAMSUNG 980 - 1 TB HDD - RTX 2070 - raffredamento liquido - 750V Corsair.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Computer', 'Acer', 'i7 10000 - 64 GB RAM DDR4 - 1 TB SSD NVME SAMSUNG 980 PRO - RTX 3060', '1499.99', '7', '0.22','./Prodotti/i7 10000 - 64 GB RAM DDR4 - 1 TB SSD NVME SAMSUNG 980 PRO - RTX 3060 - 1000W COOLERMASTER - raffredamento a liquido.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('CPU', 'i3-7100', 'Intel Core i3-7100 3.9GHz 3MB Cache intelligente Scatola', '180', '7', 0.22,'./Prodotti/Intel Core i3-7100 3.9GHz 3MB Cache intelligente Scatola.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('CPU', 'i5-10600KF', 'Intel Core i5-10600KF (base 4.10 GHz, attacco LGA1200, 125 Watt) Box', '203.52', '4', 0.22,'./Prodotti/Intel Core i5-10600KF (base 4.10 GHz, attacco LGA1200, 125 Watt) Box.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('CPU', 'i7 8700', 'Intel Core i7 8700 Cpu Processore, Argento', '289.90', '2', 0.22,'./Prodotti/Intel Core i7 8700 Cpu Processore, Argento.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('CPU', 'i7-9700K', 'Intel Core i7-9700K processore 3,6 GHz Scatola 12 MB Cache intelligente', '285', '11', 0.22,'./Prodotti/Intel Core i7-9700K processore 3,6 GHz Scatola 12 MB Cache intelligente.jpg');
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('CPU', 'i3-10100', 'Processore Intel BX8070110100 Core i3-10100 frequenza di base 3,60 GHz attacco LGA1200 65 Watt', '171', '9', 0.22,'./Prodotti/Processore Intel BX8070110100 Core i3-10100 frequenza di base 3,60 GHz attacco LGA1200 65 Watt.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Alimentatori', 'Corsair CV650', 'Corsair CV650 80 PLUS Bronze Non Modulare ATX 650 Watt Alimentatore, Alimentazione Continua a Piena Potenza, Ventola a Bassa Rumorosità  con Controllo Termico 120 mm, Alloggiamento Compatto, EU, Nero', '64.90', '12', 0.22,'./Prodotti/Corsair CV650 80 PLUS Bronze Non Modulare ATX 650 Watt Alimentatore, Alimentazione Continua a Piena Potenza, Ventola a Bassa Rumorosita con Controllo Termico 120 mm, Alloggiamento Compatto, EU, Nero.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Alimentatori', 'Corsair CX650M', 'Corsair CX650M Alimentatore PC, 80 Plus Bronze, 650 W, CXM (Cavo semimodulare), Nero', '73.98', '12', 0.22,'./Prodotti/Corsair CX650M Alimentatore PC, 80 Plus Bronze, 650 W, CXM (Cavo semimodulare), Nero.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Alimentatori', 'EVGA 450', 'EVGA 450 BR, 80+ BRONZE 450W, garanzia 3 anni, alimentatore 100-BR-0450-K2 (UE)', '45', '7', 0.22,'./Prodotti/EVGA 450 BR, 80+ BRONZE 450W, garanzia 3 anni, alimentatore 100-BR-0450-K2 (UE).jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Alimentatori', 'EVGA 1000 GQ', 'EVGA 1000 GQ, 80+ GOLD 1000W, semi-modulare, EVGA ECO Mode, garanzia 5 anni, alimentatore 210-GQ-1000-V2 (UE)', '207.62', '8', 0.22,'./Prodotti/EVGA 1000 GQ, 80+ GOLD 1000W, semi-modulare, EVGA ECO Mode, garanzia 5 anni, alimentatore 210-GQ-1000-V2 (UE).jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Alimentatori', 'Sharkoon 80PLUS', 'Sharkoon Alimentatore 600WATT 80PLUS Bronze, RYZEN Compatibile, 120MM Low Noise Fan', '39.99', '11', 0.22,'./Prodotti/Sharkoon Alimentatore 600WATT 80PLUS Bronze, RYZEN Compatibile, 120MM Low Noise Fan.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('RAM', 'Corsair', 'Corsair Vengeance LPX Memorie per Desktop a Elevate Prestazioni, 16 GB (2 X 8 GB), DDR4, 3200 MHz, C16 XMP 2.0, Nero, 288-pin DIMM', '95.99', '3', '0.22','./Prodotti/Corsair Vengeance LPX Memorie per Desktop a Elevate Prestazioni, 16 GB (2 X 8 GB), DDR4, 3200 MHz, C16 XMP 2.0, Nero, 288-pin DIMM.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('RAM', 'Corsair', 'CORSAIR VENGEANCE RGB PRO SL 32 GB (2 x 16 GB) DDR4 3200 (PC4-25600) C16 1,35 V - Nero', '219.99', '4', '0.22','./Prodotti/CORSAIR VENGEANCE RGB PRO SL 32 GB (2 x 16 GB) DDR4 3200 (PC4-25600) C16 1,35 V - Nero.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('RAM', 'Crucial', 'Crucial Ballistix BL2K8G32C16U4BL RGB, 3200 MHz, DDR4, DRAM, Memoria Gaming Kit per Computer Fissi, 16GB (8GBx2), CL16, Nero', '108.57', '1', '0.22','./Prodotti/Crucial Ballistix BL2K8G32C16U4BL RGB, 3200 MHz, DDR4, DRAM, Memoria Gaming Kit per Computer Fissi, 16GB (8GBx2), CL16, Nero.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('RAM', 'Crucial', 'Crucial Ballistix BL2K16G32C16U4R 3200 MHz, DDR4, DRAM, Memoria Gaming Kit per Computer Fissi, 32GB (16GB x2), CL16, Rosso', '107.70', '2', '0.22','./Prodotti/Crucial Ballistix BL2K16G32C16U4R 3200 MHz, DDR4, DRAM, Memoria Gaming Kit per Computer Fissi, 32GB (16GB x2), CL16, Rosso.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('RAM', 'Crucial', 'Crucial RAM CT8G4DFRA266 8GB DDR4 2666 MHz CL19 Memoria Desktop', '41.99', '5', '0.22','./Prodotti/Crucial RAM CT8G4DFRA266 8GB DDR4 2666 MHz CL19 Memoria Desktop.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Dissipatori', 'Arctic', 'ARCTIC Alpine 12 CO - Dissipatore per CPU per Operazioni Continue, Ventola 92 mm, Sistema di Raffreddamento per PC, CompatibilitÃ  con Intel 115X e 1200, Cuscinetto Doppia Sfera, 250-2700 RPM', '11.99', '7', '0.22','./Prodotti/ARCTIC Alpine 12 CO - Dissipatore per CPU per Operazioni Continue, Ventola 92 mm, Sistema di Raffreddamento per PC, Compatibilità con Intel 115X e 1200, Cuscinetto Doppia Sfera, 250-2700 RPM.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Dissipatori', 'Arctic', 'ARCTIC Freezer 34 eSports DUO - Dissipatore di processore semi-passivo con 2 ventole da PWM 120 mm per Intel e AMD, Dissipatore per CPU con raffreddamento - Rosso', '41.99', '11', '0.22','./Prodotti/ARCTIC Freezer 34 eSports DUO - Dissipatore di processore semi-passivo con 2 ventole da PWM 120 mm per Intel e AMD, Dissipatore per CPU con raffreddamento - Rosso.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Dissipatori', 'Cooler Master', 'Cooler Master Hyper 212 EVO Dissipatore dâ€™Aria CPU Sistema di Raffreddamento - Prestazioni Comprovate - 4 Tubi di Calore a Contatto Diretto Continuo, Ventola 120', '37.11', '4', '0.22','./Prodotti/Cooler Master Hyper 212 EVO Dissipatore d Aria CPU Sistema di Raffreddamento - Prestazioni Comprovate - 4 Tubi di Calore a Contatto Diretto Continuo, Ventola 120.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Dissipatori', 'Cooler Master', 'Cooler Master MasterLiquid ML240L V2 RGB Dissipatore CPU a Liquido Illuminazione Effetti Luminosi, Pompa 3a Generazione, Ottimo Radiatore e Due Ventole SickleFlow da 120 mm', '70.98', '3', '0.22','./Prodotti/Cooler Master MasterLiquid ML240L V2 RGB Dissipatore CPU a Liquido Illuminazione Effetti Luminosi, Pompa 3a Generazione, Ottimo Radiatore e Due Ventole SickleFlow da 120 mm.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Dissipatori', 'Corsair', 'Corsair Hydro H100x Sistema di Raffreddamento a Liquido per CPU, Radiatore da 240 mm, Due Ventole PWM da 120 mm, LED Bianco', '82.99', '7', '0.22','./Prodotti/Corsair Hydro H100x Sistema di Raffreddamento a Liquido per CPU, Radiatore da 240 mm, Due Ventole PWM da 120 mm, LED Bianco.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Case', 'GOLDEN FIELD', 'Case PC Gaming con Finestra Laterale', '69.99', '10', '0.22','./Prodotti/Case Fesjoy, ATX Full-View Side trasparente.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Case', 'Fesjoy', 'Case per computer desktop ATX Full-view Side trasparente', '99.99', '9', '0.22','./Prodotti/Case PC Gaming, con Finestra Laterale.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Schede Video', 'ASUS', 'NVIDIA GeForce GTX 1050 Ti', '399.99', '6', '0.22','./Prodotti/Scheda Video Asus NVIDIA GeForce GTX 1050 Ti.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Schede Video', 'MAXSUN', 'NVIDIA GEFORCE GT 1030 2GB ITX', '199.99', '11', '0.22','./Prodotti/Scheda Video MAXSUN NVIDIA GEFORCE GT 1030 2GB ITX.jpg');	
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Scheda Madre', 'MSI', 'MSI MEG X570 ACE', '399.99', '12', '0.22','./Prodotti/Scheda Madre ASUS ROG STRIX B450-F.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Scheda Madre', 'ASUS', 'ROG STRIX B450-F', '149.99', '11', '0.22','./Prodotti/Scheda Madre MSI MSI MEG X570 ACE.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Hard Disk', 'BarraCuda', '1 TB - Hard Disk Interno - SATA da 6 GBit/s', '33.99', '8', '0.22','./Prodotti/Hard Disk BarraCuda 1 TB  Hard Disk Interno  SATA da 6 GBits.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('SSD', 'HIKVISION', 'SSD interno da 2,5 pollici - 128 GB', '29.99', '5', '0.22','./Prodotti/SSD HIKVISION SSD interno da 2,5 pollici  128 GB.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('SSD', 'Kingston', 'A400 SSD SA400S37/480G', '49.99', '6', '0.22','./Prodotti/SSD Kingston A400 SSD SA400S37 480G.jpg');
+
+INSERT INTO articolo (Tipologia, Nome, Descrizione, Prezzo, Quantita_Disponibile, IVA, Image)
+Values ('Hard Disk', 'Ironwolf', '8 TB HDD hard disk interno', '299.99', '15', '0.22','./Prodotti/Hard Disk Ironwolf 8 TB HDD hard disk interno.jpg');
+
+insert into utente(Nome,Cognome,Email,Password,Ruolo)
+values("Admin","All","pcworld.infoitalia@gmail.com","Tsw12345@","admin")

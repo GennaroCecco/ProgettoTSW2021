@@ -1,0 +1,2056 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" 
+@font-face {
+   font-family: 'Quicksand', sans-serif;
+   src: url('Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+	height: 100%;
+}
+
+a {
+	color: #292929;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/*Sezione sito*/
+
+body {
+	margin: 0;
+	min-height: 100%; 
+    position: relative;
+    background-color: white;
+	min-height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+	padding-left: 12px;
+	padding-top: 6px;
+	float: left;
+	display: inline-block;
+	width: 25%;
+}
+
+.logo img {
+	width: 180px;
+}
+
+
+
+.content {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+    padding-bottom: 75px;
+}
+
+.prodotti {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product {
+	width: 300px;
+	height: 390px;
+}
+
+.index {
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+}
+
+.index a {
+	text-decoration: none;
+	font-size: 20px;
+	color: blue;
+}
+
+.index a:hover {
+	background-color: #e9eceb;
+	font-weight: bold;
+}
+
+.indexSmart {
+	display: none;
+}
+
+.product button {
+	margin-left: 5px;
+	width: 45px;
+	height: 45px;
+}
+
+.prezzo {
+	padding-top: 17px;
+	display: inline-block;
+	text-align: center;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 75px;
+	width: 100%;
+	background-color: #292929;
+	z-index:20;
+}
+
+.menuSmartUser{
+	display:none;
+}
+
+
+.userCar {
+	display: inline-block;
+	float: right;
+}
+
+.utente, .carrello{
+	float: right;
+	display: inline-block;
+	position: relative;
+}
+
+.utente img, .carrello img {
+	width: 50px;
+	margin: 10px 10px 10px 10px;
+}
+
+.searchSmart{
+	display: none;
+}
+/*login-Registrazione*/
+login {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: url(./img-banner/Background-login.jpg) no-repeat center center fixed;
+}
+
+.login input {
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.login img {
+    width: 100%;
+}
+
+.loginblock {
+    border: 2px;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+
+.loginblock p {
+    font-size: 22px;
+}
+
+.Errorelogin {
+	font-size: 18px;
+	color: red;
+	font-weight: 500;
+}
+
+.container{
+
+	width: 50%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+	margin: auto;
+}
+
+.container .registrazione-right{
+	width: 40%;
+	height: 100%;
+	background: linear-gradient(to right, #6397d0,#e9eceb );
+	padding: 30px 25px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+}
+
+.container .registrazione-left{
+	width: 60%;
+	height: 100%;
+	background: #e9eceb;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 30px 25px; 
+	 
+}
+.container .registrazione-left .registrazione-left-input{
+	position: relative;
+	top:25%;
+}
+.container .registrazione-right .registrazione-right-Hello{
+	position: relative;
+	top:15%;
+}
+
+.container .registrazione-right .registrazione-right-Hello p{
+	font-size: 20px;
+}
+
+
+
+.container .registrazione-left 
+.registrazione-left-input .inputRegi{
+	margin-top: 10px;
+}
+
+.container .registrazione-left 
+.registrazione-left-input .inputRegi input{
+	height: 35px;
+	font-size: 20px;
+}
+
+.container .registrazione-left .registrazione-left-input .btnRegistrati{ 
+ 	font-size: 20px;
+	margin: auto;
+}
+/*Fine login-registrazione*/
+
+/*Ordini*/
+
+.ordinicontent {
+	width: 70%;
+	border: 2px solid;
+	padding: 2px 2px 2px 2px;
+}
+
+.ordinicontent h3{
+	width: auto;
+	display: inline-block;
+}
+
+.ordinicontent p {
+	width: auto;
+	float: right;
+	display: inline-block;
+	padding-right: 10px;	
+}
+
+.ordine {
+	text-align: left;
+	padding-left: 10px;
+	border: 2px solid;
+	padding-bottom: 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+.statodettagli p {
+	display: inline;
+	float:left;
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 3px 0 3px 0;
+}
+
+.statodettagli a {
+	text-decoration: none;
+}
+
+.statodettagli .iconInfo {
+	font-size: 18px;
+}
+/*Dettagli Ordine*/
+
+.dettagliOrdine {
+	padding: 15px 5px 0px 5px;
+	margin-bottom: -2px;
+	border: 2px solid;
+	border-color: gray;
+	height: 100%;
+}
+
+.backordini a {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.backordini a:hover {
+	font-weight: bold;
+}
+.descrizioneOrdini {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 46%;
+	font-size: 20px;
+}
+
+.infodescrizioneOrdini {
+	display: inline-block;
+	height: 300px;
+	width: 230px;
+	margin:auto;
+}
+
+.prezzodescrizioneOrdini {
+	width: 200px;
+	display: inline-block;
+	font-size: 36px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border: 2px solid black;
+	float:right;
+}
+
+
+/*Fine ordini*/
+
+/*Contatore carrello*/
+.contatore{
+	position: absolute;
+	display : block;
+	top: 50%;
+	color: orange;
+	font-size: 25px;
+	left: 57%;
+	transform: translate(-100%,-100%);
+}
+
+/*Fine contatore*/
+
+/*Descrizione prodotto*/
+
+.dettagli {
+	display: block;
+	width: 100%;
+	height: 290px;
+}
+
+.descrizione {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 46%;
+	font-size: 20px;
+}
+
+.infodescrizione {
+	float: right;
+	height: 300px;
+	width: 230px;
+}
+
+.infodescrizione .iconCart {
+	float:none;
+	text-align: center;
+	display:inline-block;
+}
+
+.prezzodescrizione {
+	width: 200px;
+	float: right;
+	display: inline-block;
+	font-size: 36px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	border: 2px solid black;
+}
+
+.addCart {
+	text-align: center;
+}
+
+.addCart img {
+	width: 30px;
+	height: 30px;
+}
+
+.quant {
+	margin-top: 15px;
+}
+
+.comProd a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	color: blue;
+	
+}
+
+.comProd a:hover{
+	font-weight: bold;
+}
+
+.areaCom{
+	width: 100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	margin-left:auto;
+	margin-right:auto;
+}
+.allCom{
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.comsUtenti{
+	width: 30%;
+	margin: 10px 10px 10px 10px;
+}
+/*CheckPop*/
+.popupimg{
+	display: none;
+	
+}
+.popup img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+.popup{
+	text-align: center;
+	position: relative;
+	width: 10%
+}
+.show{
+	display: block;
+	-webkit-animation: fadeIn 5s linear forwards;
+	animation: fadeIn 5s linear forwards;
+}
+@-webkit-keyframes fadeIn{
+	0%,100%{opacity: 0;}
+	95% {opacity: 1;}
+}
+
+@keyframes fadeIn{
+	0%,100%{opacity: 0;}
+	95% {opacity: 1;}
+}
+
+.comsUtenti{
+	display: block;
+	width: 30%;
+}
+.areaCom{
+	max-width: 500px;
+	min-width: 400px;
+}
+.inserisciCom textarea{
+	display: inline-block;
+	margin: auto;
+	
+}
+
+.inserisciCom input{
+	width: 250px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.allCom p{
+	width: 100%;
+	display: block;
+	margin:auto;
+}
+
+.areaCommento h4{
+	width: 100%;
+	font-size: 25px;
+}
+
+.areaCommento p{
+	font-size: 20px;
+	text-align: left;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.areaCommento span{
+	width: 100%;
+	text-align: left;
+}
+
+.areaCommento img{
+	float:left;
+}
+.imgComm{
+	display: block;
+}
+
+.allCom{
+	display: none; 
+	background-color: #e9eceb;
+	padding: 20px 5px 20px 5px;
+}
+
+.areaCommento{
+	border: 2px solid;
+	background-color: white;
+	padding: 5px 10px 10px 10px;
+}
+/*Fine descrizione prodotto*/
+
+/*Carrello*/
+
+.carrelloView {
+    display:inline-block;
+    width: 75%;
+    background-color: #e9eceb;
+}
+
+.carrelloView img {
+    margin: 5px 15px 10px 15px;
+}
+
+.carrelloView h2 {
+    text-align: left;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+.carrelloView p {
+    text-align: left;
+}
+
+.formcart {
+    text-align: left;
+}
+
+.cartblock {
+    width: 100%;
+    min-height: 290px;
+}
+
+.descrizioneCarrello {
+    display: block;
+    width: 90%;
+    text-align: left;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 19px;
+    padding-top: 5px;
+    padding-right:0;
+}
+
+.prezzoCarrello {
+    position: relative;
+    padding-right: 5px;
+    float: right;
+    text-align: right;
+    font-size: 2em;
+    display: inline;
+}
+
+   .dettaglipref {
+    width:200px;
+    padding-left:10px;
+}
+
+    .prezzoresponsive {
+       position:absolute;
+        bottom:-25px;
+        right:0;
+    	margin-bottom: -10px;
+    }
+
+.imageCarrello {
+        display:block;
+        float:left;
+    }
+
+.payCart{
+    font-size: 20px;
+}
+.payCart a{
+    text-decoration: none;
+    color: blue;
+
+
+}
+
+.payCart a:hover{
+    font-weight: bold;
+}
+
+/*Fine carrello*/
+
+.ciaoutente {
+	color: #f4f4f8;
+	float: right;
+	margin-top: 25px;
+}
+
+.ciaoutente a {
+    text-decoration: none;
+    color: #f4f4f8;
+    font-size: 19px;
+}
+
+.catalogov {
+	display: none;
+}
+
+.iconInfo, .iconCart {
+	display: inline-block;
+	float: right;
+}
+
+.iconCart img {
+	width: 35px;
+	height: 35px;
+}
+
+.iconInfo img {
+	width: 30px;
+	height: 30px;
+}
+
+.iconRemove {
+	float:left;
+	width: 45px;
+	height: 45px;
+	
+}
+
+.iconModify {
+	padding-left:20px;
+	width: 45px;
+	height: 45px;
+}
+
+.footer {
+    position: absolute;
+    left: 0; bottom: 0;
+    height: 75px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    width: 100%;
+    background-color: #292929;
+}
+
+.footertext {
+    display: inline-block;
+    padding-left: 5px;
+    color: #f4f4f8;
+    height: 65px;
+}
+
+.copyright {
+    width: 25%;
+    text-align: right;
+    color:white;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.metodiPagamento{
+    display: inline-block;
+    width: 25%;
+    height: 65px;
+    float: right;
+    margin: auto;
+}
+
+.metodo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px 15px 0 0;
+    float: right;
+}
+
+.social img{
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 120%;
+}
+
+.socialdistance {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 65px;
+    float: right;
+}
+
+.social {
+    display: inline-block;
+    margin: 5px 15px 0 0;
+    width: 50px;
+    height: 55px;
+}
+
+.navmenu{
+	padding-top: 8px;
+	margin-bottom: 15px;
+	height: 40px;
+	width: 100%;
+	background-color: #e9eceb;
+	margin-top: 12px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.navmenu a{
+	text-decoration: none;
+	padding-left: 12px;
+	color: #292929;
+	font-size: 18px;
+}
+
+.navmenu a:hover{
+	color: black;
+	font-weight: bold;
+}
+/*DropMenu*/
+.dropLink {
+  text-decoration: none;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+}
+
+.dropLink2 {
+  text-decoration: none;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contenuto {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-contenuto a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-contenuto a:hover {
+	color: black;
+	font-weight: bold;}
+
+.dropdown:hover .dropdown-contenuto{display: block;}
+
+.dropdown:hover .dropLink {
+	color: black;
+	font-weight: bold;}
+	
+	/*Drop Computer*/
+	
+	.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+	
+	.dropdown-contenuto2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 0;
+  right: -60px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+	.dropdown-contenuto2 li {
+	position: relative;
+	
+	
+	}
+
+.dropdown-contenuto2 a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-contenuto2 a:hover {
+	color: black;
+	font-weight: bold;
+	
+	}
+
+.dropdown2:hover .dropdown-contenuto2{
+	display: inline;
+	
+	
+	}
+
+.dropdown2:hover .dropLink2 {
+	color: black;
+	font-weight: bold;}
+	
+	
+	
+	.dropdown-contenuto3 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 0;
+  right: -140px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+	.dropdown-contenuto3 li {
+	position: relative;
+	}
+
+.dropdown-contenuto3 a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-contenuto3 a:hover {
+	color: black;
+	font-weight: bold;
+	
+	}
+
+.dropdown2:hover .dropdown-contenuto3{
+	display: inline;
+	
+	
+	}
+
+
+/*Fine DropMenu*/
+
+
+/*Barra di Ricerca*/
+
+.search {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	margin-top:20px;
+}
+
+.searchTerm {
+  width: 250px;
+  border: 3px solid white;
+  border-right: none;
+  padding: 5px;
+  height: 37px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+
+}
+
+.searchButton {
+  width: 44px;
+  height: 37px;
+  border: 1px solid #e9eceb;
+  background: #e9eceb;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchButton img {
+	width: 36px;
+	height: 36px;
+}
+
+.searchbox {
+	display: inline-block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Fine Barra di Ricerca*/
+
+
+
+
+/*Profilo utente*/
+.wrapper {
+	width: 980px;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	overflow: auto;      
+	box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+}
+
+.wrapper .left {
+	width: 30%;
+	background: linear-gradient(to right, #7b7d7c,#e9eceb );
+	padding: 30px 25px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+	
+}
+
+.wrapper .left img {
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.wrapper .left h4 {
+	margin-bottom: 10px;
+}
+
+.wrapper .left p {
+	font-size: 12px;
+}
+
+.wrapper .right {
+	width: 70%;
+	background: #e9eceb;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 30px 25px;  
+}
+
+.wrapper .right .info,
+.wrapper .right .operazioni {
+	margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .operazioni h3 {
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e0e0e0;
+	color: #daa520;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	
+}
+
+.wrapper .right .info_data,
+.wrapper .right .operazioni_data {
+	display: flex;
+	}
+.wrapper .right .operazioni_data .data {
+	width: 50%;
+}
+.wrapper .right .info_data .data
+{
+	width: 200px;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .operazioni_data .data h4 {
+	color: #d4af37;
+	margin-bottom: 5px;
+	
+}
+
+.wrapper .right .info_data .data h4 a,
+.wrapper .right .operazioni_data .data h4 a{
+	color: #d4af37;
+	margin-bottom: 5px;
+	text-decoration: none;
+	
+}
+
+.wrapper .right .info_data .data h4 a:hover,
+.wrapper .right .operazioni_data .data h4 a:hover{
+	color: #d4af37;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .operazioni_data .data p{
+	font-size: 13px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+
+/*Fine Profilo Utente*/
+
+/*Completa Utente*/
+
+.formCompleta {
+	width: 95%;
+	display: inline-block;
+	margin: auto;
+}
+
+.inputBox {
+	width: 17%;
+}
+
+.formCompleta .dettagliUtenti {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	margin: 0px 0 12px 0;
+	border: 2px;
+	border-style: solid;
+	padding: 10px 20px 20px 20px;
+	background: #d3d3d3;
+}
+.formCompleta .dettagliUtenti .inputBox{
+	margin-bottom:15px;
+}
+
+ .inputBox input {
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	font-size: 20px;
+}
+
+.dettagliUtenti .inputBox .dettagliSpan{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.inputBox select {
+	height: 30px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.inputBox .dettagliSpan {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.dettagliSpan{
+	font-size: 24px;
+}
+
+#send{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.titoloCompleta{
+	background-color: #292929;
+	height: 90px;
+	padding-top: 5px;
+}
+
+.titoloCompleta h3{
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+}
+
+.titoloCompleta img{
+	width: 85px;
+	height: 85px;
+	float: left;
+}
+/*Fine Completa Utente*/
+
+
+/*Slider*/
+* {box-sizing: border-box;}
+.mySlides {
+	display: none;
+}
+
+
+
+/*SlideShow Container*/
+.slideshow-container{
+	text-align: center;
+	display: block;
+	z-index:10;
+}
+
+/*Indicatore (Punti)*/
+.dot{
+	height: 15px;
+	width: 15px;
+	margin: 0px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 3 ease;
+	
+}
+
+.active{
+	background-color: #717171;
+}
+
+/*Animazione Ombra*/
+.fade{
+	
+	animation-name: fade;
+	animation-duration: 3s;
+}
+
+@keyframes fade{
+	from {opacity: .5}
+	to {opacity: 1}
+}
+
+/*Fine Slider*/
+
+/*Chi Siamo*/
+
+.chisiamoimage {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.chisiamoimage img {
+	min-width: 777px;
+	height: auto;
+}
+
+.chisiamo {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.chisiamo h1 {
+	color: #055566;
+	text-align: center;
+	font-size:70px;
+	margin: 10px 0 0 0;
+}
+
+.chisiamo h2 {
+	color: #055566;
+	font-size: 30px;
+}
+
+.chisiamo p, .chisiamo li {
+	font-size: 22px;
+}
+
+/*Sezione Admin*/
+
+.headeradmin {
+	position: sticky;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 130px;
+	width: 100%;
+	background-color: #292929;
+	z-index: 10;
+}
+
+.logoadmin {
+	display: inline-block;
+	padding-top: 12px;
+	float: left;
+	width: 25%;
+	height: 110px;
+}
+
+.logoadmin img{
+	float:left;
+	width: 300px;
+	padding-left:8px;
+	
+}
+
+.benvenutoAdmin{
+	display: inline-block;
+	color:white;
+	font-size: 26px;
+	width: 50%;
+	height:90px;
+	margin-top:14px;
+}
+
+
+.iconAdmin {
+	padding-top: 12px;
+	width: 25%;
+	float: right;
+}
+
+.iconAdmin img {
+	display: inline-block;
+	float: right;
+	width: 130px;
+	height: 100%;
+}
+.navAdmin{
+	padding-top: 8px;
+	margin-bottom: 15px;
+	height: 40px;
+	width: 100%;
+	background-color: #e9eceb;
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.navAdmin a{
+	text-decoration: none;
+	padding-left: 5px;
+	color: #292929;
+	font-size: 20px;
+}
+
+.navAdmin a:hover{
+	color: black;
+	font-weight: bold;
+}
+.navAdmin button{
+	text-decoration: none;
+	padding-left: 5px;
+	color: #292929;
+	font-size: 20px;
+}
+
+.dropdownRicerca{
+	display:none;
+	position: absolute;
+	width: 340px;
+	background-color: #f1f1f1;
+	padding: 5px 10px 5px 5px;
+	margin-left: 0;
+	text-align: left;
+	
+	
+}
+.dropdownRicerca ul{
+	list-style-type: none;
+}
+.dropdownRicerca li{
+	position:relative;
+}
+.dropdown:hover .dropdownRicerca{
+	display: block;
+
+}
+
+.navAdmin button:hover{
+	color: black;
+	font-weight: bold;
+}
+
+.ricercaPerNome {
+  display: none;
+  position: relative;
+  width:300px;
+   height: 0;
+  bottom: 25px;
+  right: -54.5%;
+  z-index: 1;
+}
+.ricercaPerNome input{
+	font-size: 15px;
+}	
+.ricercaPerData{
+display: none;
+  position: relative;
+  width:300px;
+  height: 0;
+  bottom: 25px;
+  right: -54.5%;
+  z-index: 1;
+}
+
+.ricercaPerData input{
+	font-size: 15px;
+}	
+.contenitoreForm {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.contenitoreForm input{
+	width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.contenitoreForm .btnCerca .btnChiudi {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.iconDelete{
+	float: right;
+}
+.iconDelete img{
+	width: 35px;
+	height: 35px;
+}
+
+.iconModify {
+	float: right;
+	width: 45px;
+	height: 45px;
+	margin-right: 25px;
+}
+.modificaAdmin{
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+.modificaAdmin img{
+	display: block;
+	margin:auto;
+	height: 400px;
+	width:400px;
+	border: 1px solid black;
+	padding: 7px 7px 7px 7px;
+	background-color: white;
+}
+
+.modificaAdminDettagli{
+	text-align: center;
+	width: 65%;
+	margin:auto auto 20px auto;
+	background-color: #e9eceb;
+	padding: 15px 0 15px 0;
+}
+.modificaInput{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.modificaInput input{
+	height: 45px;
+	width: 70%;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding-left : 15px;
+	font-size: 20px;
+}
+
+.modificaInput span{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.modificaAdminDettagli .btnModifica{
+	width: 30%;
+	margin-top: 15px;
+	font-size: 25px;
+}
+
+.UtentiAdmin {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.UtenteAdmin {
+	width: 230px;
+	height: 330px;
+	padding-left:15px;
+	border: 2px solid black;
+}
+
+.insertProdotto{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto; 
+	}
+
+.flexInput{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.inputInsert{
+	width: 50%;
+}
+
+
+.inputInsert input {
+	width: 80%;
+	height: 35px;
+	font-size: 24px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.inputInsert p {
+	text-align: center;	
+	margin-bottom: 8px;
+	font-weight: 500;
+	font-size: 20px;
+}	
+.insertImage{
+	display: block;
+	width: 256px;
+	height: 256px;
+	border: 2px solid black;
+	margin:auto;
+}
+
+.btnInserisci{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.btnInserisci input{
+	height: 35px;
+	width: 100px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.menuSmart{
+	display: none;
+	
+}
+
+/*Fine Sezione Admin*/
+
+.errore {
+	margin-top:-25px;
+	height:100;
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 10%;
+	background-color: #e9eceb;
+	padding-bottom: 75px;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1000px) {
+	.header {
+		position: static;
+		background-color: #292929;
+		height: 150px;
+		min-height: 100%;
+	}
+	.errore {
+		padding-bottom: 190px;
+		margin-bottom: 30px;
+		
+	}
+	.slideshow-container{
+	display: none;
+	}
+	.logo {
+		width: 50%;
+	}
+	
+	.logo img {
+		width: 240px;
+	}
+	
+	.utente, .carrello {
+		width: 82px;
+	}
+	
+	.utente img, .carrello img {
+		margin: 15px -5px 15px 15px;
+		padding: 0;
+	}
+	.wrapper .right .info_data,
+.wrapper .right .operazioni_data {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	
+}
+	.userCar {
+		width: 50%;
+		height: 125px;
+		float: right;
+		margin-top: 10px;
+	}
+	
+	.searchbox {
+		display: block;
+		float: none;
+		height: 0;
+	}
+	
+	.search {
+		height: 40px;
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	.ciaoutente {
+		display: inline-block;
+		font-size: 22px;
+		margin-top: 30px;
+	}
+	
+	.ciaoutente a {
+		font-size: 22px;
+	}
+	
+	.content{
+		padding-bottom: 160px;
+	}
+	
+	.benvenutoAdmin{
+		float: right;
+		text-align:right;
+		width: 50%;
+		padding-right:15px;
+		padding-top: 10px;
+		margin-top:5px;
+		
+	}
+	
+	.iconAdmin{
+		display: none;
+	}
+	
+	.socialdistance {
+        width: 50%;
+        height:50%;
+        display:flex;
+        justify-content: center;
+        padding-left: 15px;
+        float:none;
+    }
+
+    .footer {
+        height: 160px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footertext {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 50%;
+        height:50%;
+        padding-left: 0;
+    }
+
+    .metodiPagamento {
+        float: none;
+        width: 50%;
+        height:50%;
+        display:flex;
+        justify-content: center;
+        margin:0;
+    }
+
+    .copyright {
+        float: none;
+        display: block;
+        width: 50%;
+        height:50%;
+        text-align: center;
+    }
+	.imageCarrello {
+        display:block;
+        float:left;
+    }
+
+    .imageCarrello img {
+        width:196px;
+        height:196px;
+    }
+
+    .prezzoresponsive {
+       position:relative;
+       bottom:0;
+       right:0;
+    }
+
+    .prezzoCarrello {
+        position: relative;
+    }
+	.descrizioneCarrello h3{
+		font-size: 0.91em;
+	}
+	/*Dettagli da Tablet*/
+	
+	.dettagli {
+		height: 100%;
+		min-height: 290px;
+		max-height: 700px;
+	}
+	
+	.descrizione {
+		display: inline-block;
+		float: none;
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+	}
+	
+	.descrizione h3 {
+		margin-top: 0;
+	}
+	
+	.descrizioneimage {
+		display: block;
+		float: left;
+		width: 256px;
+		height: 100%;
+	}
+	
+	.bloccodescrizione {
+		float:left;
+		display: inline-block;
+		width: 65%;
+		min-height: 290px;
+	}
+	
+	.infodescrizione {
+		display:inline-block;
+		width: 35%;
+	}
+	
+	.prezzodescrizione {
+		display:block;
+		width:230px;
+		margin-right:0;
+		margin-left:0;
+		padding: 1px 1px 1px 1px;
+	}
+	
+	.inserisciCom textarea {
+		width: 80%;
+	}
+	
+	.imgComm{
+	display:block;
+		margin:auto;
+		width:90%;
+		height:60px;
+		float:none;
+	}
+	.imgComm img{
+	display:block;
+		margin:auto;
+		height:60px;
+		float:none;
+	}
+	
+	.areaCommento h4{
+		margin-top:5px;
+	}
+	
+	
+	/*UserLogged Tablet*/
+	
+	.wrapper .left {
+		width: 0;
+		display: none;
+	}
+	
+	.wrapper, .wrapper .right {
+		width: 100%;
+	}
+	
+	.container {
+		flex-direction: column;
+		height: 100%;
+	}
+	
+	.container .registrazione-left {
+		width: 100%;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 5px;
+	}
+	
+	.container .registrazione-right {
+		width: 100%;
+		background: linear-gradient(to bottom, #6397d0,#e9eceb );
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	.container .registrazione-left 
+	.registrazione-left-input .inputRegi input{
+		width: 100%;
+	}
+	
+	/*CompletaConfig Tablet*/
+	.inputBox {
+		width: 26%;
+		margin:auto;
+	}
+	
+	.formCompleta {
+		justify-content: center;
+	}
+	
+	.titoloCompleta h3{
+		font-size: 24px;
+	}
+	.modificaAdminDettagli{
+		width: 95%;
+		margin:auto;
+	}
+	
+	/*Ordine*/
+	.dettagliOrdine{
+		height: auto;
+		width: 100%;
+	}
+
+	.descrizioneOrdini{
+		float: none;
+	}
+	
+}
+/*Fine Tablet*/
+
+/*SmartPhone*/
+@media screen and (max-width: 500px) {
+	
+	.header {
+		position: static;
+		background-color: #292929;
+		height: 300px;
+	}
+	
+	.prezzodescrizione {
+		width:200px;
+	}
+		.errore {
+		padding-bottom: 330px;
+		
+	}
+	.content {
+		height: 100%;
+		padding-bottom: 300px;
+	}
+	
+	.index{
+		display:none;
+	}
+	
+	.indexSmart{
+		display: block;
+	}
+	
+	.indexSmart a{
+	text-decoration: none;
+	font-size: 20px;
+	color: blue;
+	}
+	
+	.indexSmart a:hover{
+	background-color: #e9eceb;
+	font-weight: bold;
+}
+	.logo {
+		display: block;
+		float: none;
+		min-width: 100%;
+		padding: 5px 5px 0 5px;
+		height: auto;
+	}
+	
+	.logo img {
+		width: 300px;
+		display: block;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	
+	.utente {
+		display: none;
+	}
+	
+	.ciaoutente {
+		display: none;
+	}
+	
+	.carrello {
+		display: none;
+	}
+	
+	
+	.catalogov {
+		display: block;
+		width: auto;
+		margin: 50px auto 25px auto;
+		text-align: center;
+		color: #f4f4f8;
+	}
+	
+	.searchbox{
+		margin-top: 20px;
+	}
+	
+	.userCar {
+		display: none;
+	}
+	
+	.catalogov a {
+		text-decoration: none;
+	    color: #f4f4f8;
+	    font-size: 40px;
+	}
+	
+	.catalogov a:hover {
+		color: #5c5c5d;
+	}
+	
+	.slideshow-container {
+		display:none;
+	}
+	
+	.footer {
+        height: 300px;
+    }
+
+    .footertext p{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .social {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 50px;
+        height: 55px;
+    }
+
+    .metodo {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 50px;
+        height: 55px;
+    }
+
+    .socialdistance {
+        width: 50%;
+        height:auto;
+        display:block;
+        padding-left: 15px;
+        float:none;
+    }
+
+
+    .metodiPagamento {
+        float: none;
+        width: 50%;
+        height:auto;
+        display:block;
+        margin:0;
+    }
+
+    .footertext {
+        height: 50px;
+    }
+
+    .copyright {
+        height: 50px;
+    }
+
+	.headeradmin {
+		position: static;
+		height: 130px;
+	}
+
+	.logoadmin {
+		width: 50%;
+		height: 90px;
+		padding-left: 12px;
+		float: left;
+	}
+	.logoadmin img{
+	padding-left: 10px;
+	padding-bottom: 3px;
+	float: left;
+	width: 180px;
+}
+	.benvenutoAdmin{
+		font-size: 1.08em;
+		margin-top:0;
+	}
+	
+	.inputBox {
+		width: 34%;
+	}
+	
+	.titoloCompleta h3{
+		font-size: 26px;
+		margin-top: 8px;
+		margin-right: 10px;
+	}
+	
+	.inputInsert{
+		width: 100%;
+	}
+	.navAdmin{
+	display:none;
+	
+	}
+	
+	.menuSmart{
+		display: block;
+		margin:auto;
+		width: 100%;
+	}
+	
+	.menuSmart button {
+		background: #e9eceb;
+		border: 1px solid white;
+		color:black;
+		font-size: 24px;
+	}
+	
+	.menuShowSmart a{
+		color:black;
+		display: block;
+		padding-top: 15px;
+		font-size: 20px;
+		text-decoration: none;
+		font-weight: 500;
+		cursor: pointer;
+	}
+	.menuShowSmart{
+		display: block;
+		margin:8px auto auto auto;
+		width: 50%;
+		background-color: #e9eceb;
+		padding: 0px 5px 5px 5px;
+	}
+	
+	.navmenu{
+		display:none;
+	}
+	
+	.menuSmartUser{
+	display:block;
+	padding-top: 10px;
+	padding-left: 10px;
+	}
+	
+	.menuSmartUserView{
+		background-color: #e9eceb;
+	}
+	
+	.menuSmartUserView a{
+	display: block;
+	text-decoration: none;
+	font-size: 22px;
+	padding-left:10px;
+	}
+	
+	
+	.btnCatDiv, .ulComponenti, .ulComputer{
+		list-style: none;
+		padding: 0;
+		margin: 5px 0 5px 10px;
+	}
+	.ulComponenti li a, .ulComputer li a{
+		display: inline-block;
+		color:red;
+	}
+	
+	.btnCatDiv li a{
+		font-weight: bold;
+	}
+	
+	
+}
+/*Fine SmartPhone*/

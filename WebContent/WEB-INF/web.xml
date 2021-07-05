@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>PCWorld</display-name>
+  <welcome-file-list>
+    <welcome-file>CatalogoView.jsp</welcome-file>
+  </welcome-file-list>
+<resource-ref>
+	<res-ref-name>jdbc/tsw</res-ref-name>
+	<res-type>javax.sql.DataSource</res-type>
+	<res-auth>Container</res-auth>
+</resource-ref>
+
+	<servlet>
+		<servlet-name>CarrelloControl</servlet-name>
+		<servlet-class>it.unisa.control.CarrelloControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CatalogoControl</servlet-name>
+		<servlet-class>it.unisa.control.CatalogoControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DettagliControl</servlet-name>
+		<servlet-class>it.unisa.control.DettagliControl</servlet-class>
+		
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LoginControl</servlet-name>
+		<servlet-class>it.unisa.control.LoginControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegistrazioneControl</servlet-name>
+		<servlet-class>it.unisa.control.RegistrazioneControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InserimentoFinalControl</servlet-name>
+		<servlet-class>it.unisa.control.InserimentoFinalControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LogoutControl</servlet-name>
+		<servlet-class>it.unisa.control.LogoutControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InfoUtenteControl</servlet-name>
+		<servlet-class>it.unisa.control.InfoUtenteControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DettagliOrdineControl</servlet-name>
+		<servlet-class>it.unisa.control.DettagliOrdineControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>OrdiniControl</servlet-name>
+		<servlet-class>it.unisa.control.OrdiniControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RicercaControl</servlet-name>
+		<servlet-class>it.unisa.control.RicercaControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AdminControl</servlet-name>
+		<servlet-class>it.unisa.control.AdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InsertAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.InsertAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ModificaAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.ModificaAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>OrdiniAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.OrdiniAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChooseTypeControl</servlet-name>
+		<servlet-class>it.unisa.control.ChooseTypeControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LogoutAdminControl</servlet-name>
+		<servlet-class>it.unisa.control.LogoutAdminControl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EmailCheck</servlet-name>
+		<servlet-class>it.unisa.control.EmailCheck</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ElemCarrelloCount</servlet-name>
+		<servlet-class>it.unisa.control.ElemCarrelloCount</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CommentoControl</servlet-name>
+		<servlet-class>it.unisa.control.CommentoControl</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>CarrelloControl</servlet-name>
+		<url-pattern>/carrello</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CatalogoControl</servlet-name>
+		<url-pattern>/catalogo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DettagliControl</servlet-name>
+		<url-pattern>/dettagli</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginControl</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DettagliOrdineControl</servlet-name>
+		<url-pattern>/dettagliOrdine</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegistrazioneControl</servlet-name>
+		<url-pattern>/registrazione</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InfoUtenteControl</servlet-name>
+		<url-pattern>/infoUtente</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InserimentoFinalControl</servlet-name>
+		<url-pattern>/inserimento</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutControl</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>OrdiniControl</servlet-name>
+		<url-pattern>/ordini</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RicercaControl</servlet-name>
+		<url-pattern>/ricerca</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminControl</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>InsertAdminControl</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ModificaAdminControl</servlet-name>
+		<url-pattern>/modifica</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>OrdiniAdminControl</servlet-name>
+		<url-pattern>/ordiniAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChooseTypeControl</servlet-name>
+		<url-pattern>/chooseType</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutAdminControl</servlet-name>
+		<url-pattern>/logoutAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EmailCheck</servlet-name>
+		<url-pattern>/emailCheck</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ElemCarrelloCount</servlet-name>
+		<url-pattern>/cartCount</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CommentoControl</servlet-name>
+		<url-pattern>/comControl</url-pattern>
+	</servlet-mapping>
+	
+	</web-app>
